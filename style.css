@@ -220,18 +220,13 @@ p{
 
 .login{
   color: var(--grayish-blue);
-  border: none;
   background: transparent;
   font-weight: 700;
   font-family: var(--ff-primary);
   font-size: .95rem;
   letter-spacing: 1px;
   cursor: pointer;
-
-  & a{
-    text-decoration: none;
-    color: var(--grayish-blue);
-  }
+  text-decoration: none;
 
   &:hover,&:active{
     text-decoration: underline;
