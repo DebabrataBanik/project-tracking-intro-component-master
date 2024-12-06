@@ -29,7 +29,7 @@ Users should be able to:
 
 ## Links
 
-- [Live Site URL](https://debabratabanik.github.io/project-tracking-intro-component-master/)
+- [Live Site URL]()
 - [Solution URL](https://www.frontendmentor.io/solutions/project-tracking-intro-component-master-MPO62voFO9)
 
 ### Built with
