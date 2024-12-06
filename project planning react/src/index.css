@@ -23,7 +23,7 @@ img{
   margin: 0;
   padding: 0;
 }
-body{
+#root{
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -243,7 +243,7 @@ p{
 
 @media (min-width: 768px){
 
-  body{
+  #root{
     overflow: hidden;
   }
 
