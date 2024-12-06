@@ -1,4 +1,13 @@
+import Navigation from "./components/Navigation"
+import { useState } from "react"
+
 function App() {
+
+  const [closeHarburger, setCloseHarburger] = useState(false)
+  const toggleNav = () => {
+    setCloseHarburger(!closeHarburger)
+  }
+
   return (
     <>
       <div className="design"></div>
@@ -7,18 +16,16 @@ function App() {
           <div className="logo__container">
             <img src="images/logo.svg" alt="logo" />
           </div>
-          <nav className="navigation">
-            <ul>
-              <li><a href="#">PRODUCT</a></li>
-              <li><a href="#">FEATURES</a></li>
-              <li><a href="#">PRICING</a></li>
-            </ul>
-            <span></span>
-            <a href="#" className="login">LOGIN</a>
-          </nav>
-          <div className="mobile-nav">
-            <img className="hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger" />
-            <img className="close hide" src="images/icon-close.svg" alt="icon-close" />
+          <Navigation hamState={closeHarburger} />
+          <div
+            onClick={toggleNav}
+            className="mobile-nav">
+            {
+              closeHarburger ?
+                <img className="close" src="images/icon-close.svg" alt="icon-close" />
+                :
+                <img className="hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger" />
+            }
           </div>
         </header>
         <main className="container">
